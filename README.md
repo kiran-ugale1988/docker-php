@@ -20,6 +20,17 @@ docker compose up -d
 docker exec -it docker-php-web-1 sh
 => for interactive shell running
 
+
+composer init  => to install composer.json file using console.
+ and setup composer app
+
+docker compose up --build -d
+
+
+====================================================
+existing nginx file content:
+
+
 PS C:\docker-study\docker-php> docker exec -it docker-php-web-1 sh
 # cat /etc/nginx/conf.d/default.conf
 
@@ -69,8 +80,3 @@ server {
 }
 
 ###################################################
-
-composer init  => to install composer.json file using console.
- and setup composer app
-
-docker compose up --build -d
